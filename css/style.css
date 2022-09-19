@@ -6,11 +6,7 @@
 
 body {
     font-family: Helvetica,Arial,sans-serif;
-    background-color: whitesmoke;
-}
-
-header {
-
+    background-color: #ffffff;
 }
 
 .container {
@@ -35,14 +31,18 @@ header {
 
 /*-------------------------- Sign-up section -----------------------*/
 
-.sign-up__section {
-
-}
-
 .sign-up__container {
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
+}
+
+.f__button {
+    margin-bottom: 22px;
+}
+
+.g__button {
+    margin-bottom: 22px;
 }
 
 .button {
@@ -68,25 +68,26 @@ header {
     letter-spacing: normal;
 }
 
-
 .button--outlined {
     background-color: transparent;
     color: #535353;
     border: 2px solid #535353;
     margin-bottom: 22px;
-}
+} 
 
 .divider {
     display: block;
     position: relative;
     text-align: center;
     color: rgb(127, 127, 127);
+    margin-bottom: 16px;
 }
 
 .divider::after, 
 .divider::before {
     border-top: 1px solid rgb(204, 204, 204);
     content: '';
+    max-width: 160px;
     width: 45%;
     display: inline-flex;
     position: absolute;
@@ -94,9 +95,45 @@ header {
 }
 
 .divider::before {
-    left: 0;
+    left: 45px;
 }
 
 .divider::after {
-    right: 0;
+    right: 45px;
+}
+
+/*----------------- form section ---------------*/
+
+.form__section {
+
+}
+
+.form__container{
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.form__container h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.input__container {
+    /* display: block; */
+} 
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 24px;
+}
+
+.form__input input{
+    height: 20px;
 }
