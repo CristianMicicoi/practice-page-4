@@ -9,10 +9,6 @@ body {
     background-color: #ffffff;
 }
 
-header {
-
-}
-
 .container {
     max-width: 1586px;
     width: 100%;
@@ -34,10 +30,6 @@ header {
 }
 
 /*-------------------------- Sign-up section -----------------------*/
-
-.sign-up__section {
-
-}
 
 .sign-up__container {
     max-width: 450px;
@@ -76,28 +68,19 @@ header {
     letter-spacing: normal;
 }
 
-
 .button--outlined {
     background-color: transparent;
     color: #535353;
     border: 2px solid #535353;
     margin-bottom: 22px;
-}
-
-.facebook__icon {
-
-}
-
-.google__icon {
-
-}
+} 
 
 .divider {
     display: block;
     position: relative;
     text-align: center;
     color: rgb(127, 127, 127);
-    /* margin: 0 34px 16px 34px; */
+    margin-bottom: 16px;
 }
 
 .divider::after, 
@@ -117,4 +100,40 @@ header {
 
 .divider::after {
     right: 45px;
+}
+
+/*----------------- form section ---------------*/
+
+.form__section {
+
+}
+
+.form__container{
+    max-width: 450px;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.form__container h2{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    text-align: center;
+    padding-bottom: 18px;
+}
+
+.input__container {
+    /* display: block; */
+} 
+
+.form__input {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding-bottom: 24px;
+}
+
+.form__input input{
+    height: 20px;
 }
