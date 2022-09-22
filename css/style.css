@@ -35,14 +35,9 @@ body {
     max-width: 450px;
     width: 100%;
     margin: 0 auto;
-}
-
-.f__button {
-    margin-bottom: 22px;
-}
-
-.g__button {
-    margin-bottom: 22px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
 }
 
 .button {
@@ -51,28 +46,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 450px;
-    width: 394px;
-    height: 46px;
-    margin: 0 auto;
     border-radius: 500px;
     text-decoration: none;
     font-size: 14px;
+    font-weight: 700;
     line-height: 20px;
+    padding: 12px 24px;
 }
 
-.button a span {
-    font-size: 14px;
-    line-height: 20px;
-    text-transform: none;
-    letter-spacing: normal;
+.button img {
+    padding-right: 16px;
 }
 
 .button--outlined {
     background-color: transparent;
     color: #535353;
     border: 2px solid #535353;
-    margin-bottom: 22px;
 } 
 
 .divider {
@@ -104,10 +93,6 @@ body {
 
 /*----------------- form section ---------------*/
 
-.form__section {
-
-}
-
 .form__container{
     max-width: 450px;
     width: 100%;
@@ -123,17 +108,158 @@ body {
     padding-bottom: 18px;
 }
 
-.input__container {
-    /* display: block; */
-} 
-
-.form__input {
+.form__field {
     display: flex;
     flex-direction: column;
     gap: 5px;
     padding-bottom: 24px;
 }
 
-.form__input input{
-    height: 20px;
+.form__field label {
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: 1.25rem;
+    padding-bottom: 5px;
+}
+
+.form__field input, 
+.form__field select {
+    border: 1px solid grey;
+    border-radius: 3px;
+    padding: 14px;
+    outline: none;
+}
+
+.form__field input:focus, 
+.form__field select:focus {
+    outline: 2px solid black;
+}
+
+.form__field input:hover, 
+.form__field select:hover {
+    border: 1px solid black;
+    /* box-shadow: inset 0 0 0 0.5px var(--essential-base,#000000); */ 
+}
+
+.form__field input:invalid:focus, 
+.form__field select:invalid:focus {
+    outline: 2px solid red;
+}
+
+.form__field input:invalid, 
+.form__field select:invalid {
+    border: 1px solid red;
+}
+
+.form__field .caption {
+    margin-top: 8px;
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.birthday__container {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.form__field:has( > #day) {
+    width: 90px;
+}
+
+.form__field:has(> #month) {
+    width: 200px;
+}
+
+.form__field:has(> #year) {
+    width: 112px;
+}
+
+
+
+.form__field .form__field {
+    padding: 0;
+
+}
+
+.form__field .form__field label {
+    font-weight: normal;
+}
+
+.gender__container {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.gender__container .form__field {
+    padding: 4px 2px;
+}
+
+.gender__label {
+    padding: 0 24px 0 12px;
+}
+
+input[type="radio"] {
+    appearance: none;
+    padding: 8px;
+    margin-right: 10px;
+    font: inherit;
+    /* color: #169b45; */
+    width: 5px;
+    height: 5px;
+    /* border: 0.15em black; */
+    border-radius: 50%;
+    transform: translateY(4px);
+}
+
+input[type="radio"]:hover {
+    border-color: rgb(25, 192, 25);
+}
+
+input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid black;
+    outline-offset: max(2px, 0.15em);
+}
+
+/* input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(#169b45);
+} */
+
+/* input[type="radio"]:checked::before {
+    transform: scale(1);
+} */
+
+/* input[type="radio"]:focus {
+    outline: max(2px, 0.15em) solid black;
+    outline-offset: max(2px, 0.15em);
+}*/
+
+.form__checkbox {
+    display: flex;
+    flex-direction: column;
+    /* text-align: flex-start; */
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    text-transform: none;
+    letter-spacing: normal;
+}
+
+.form__checkbox label {
+    padding-bottom: 24px;
+    padding-left: 5px;
+}
+
+.form__checkbox input {
+    margin-right: 15px;
+
 }

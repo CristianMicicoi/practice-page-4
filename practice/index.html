@@ -30,20 +30,16 @@
 
             <div class="sign-up__container">
 
-                <div class="f__button">
-                    <a class="button"
-                        href="https://accounts.spotify.com/ro/login?method=facebook&continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&intent=signup">
-                        <span class="facebook__icon"><img src="/images/facebook-logo.svg" alt="facebook-logo">Sing up
-                            with Facebook</span>
-                    </a>
-                </div>
-                <div class="g__button">
-                    <a class="button button--outlined"
-                        href="https://accounts.spotify.com/ro/login?method=google&continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&intent=signup">
-                        <span class="google__icon"><img src="/images/google-logo.svg" alt="google-logo">Sign up with
-                            Google</span>
-                    </a>
-                </div>
+                <a class="button"
+                    href="https://accounts.spotify.com/ro/login?method=facebook&continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&intent=signup">
+                    <img src="/images/facebook-logo.svg" alt="facebook-logo">Sign up
+                        with Facebook
+                </a>
+                <a class="button button--outlined"
+                    href="https://accounts.spotify.com/ro/login?method=google&continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1&intent=signup">
+                    <img src="/images/google-logo.svg" alt="google-logo">Sign up with
+                        Google
+                </a>
                 <span class="divider">or</span>
             </div>
 
@@ -57,101 +53,122 @@
 
                 <h2>Sign up with your email address</h2>
 
-                <form class="input__container" action="" method="post">
+                <form action="" method="post">
 
-                    <div class="form__input">
+                    <div class="form__field">
                         <label for="sign-up-email">What's your email?</label>
-                        <input type="email" name="sign-up-email" id="sign-up-email" placeholder="Enter your email.">
+                        <input type="email" name="sign-up-email" id="sign-up-email" placeholder="Enter your email." autocomplete="off" required>
                     </div>
 
-                    <div class="form__input">
+                    <div class="form__field">
                         <label for="confirm-email">Confirm your email</label>
-                        <input type="email" name="confirm-email" id="confirm-email" placeholder="Enter your email again.">
+                        <input type="email" name="confirm-email" id="confirm-email" placeholder="Enter your email again." autocomplete="off" required>
                     </div>
 
-                    <div class="form__input">
-                        <label for="">Create a password.</label>
+                    <div class="form__field">
+                        <label for="password">Create a password.</label>
                         <input type="password" placeholder="Create a password" minlength="8" required>
                     </div>
 
-                    <div class="form__input">
-                        <label for="">What should we call you?</label>
-                        <input type="text" placeholder="Enter a profile name.">
-                        <p>This appears on your profile.</p>
+                    <div class="form__field">
+                        <label for="username">What should we call you?</label>
+                        <input type="text" name="username" id="username" placeholder="Enter a profile name." required>
+                        <p class="caption">This appears on your profile.</p>
                     </div>
 
-                    <div class="birthday">
-                        <p>What's your date of birth?</p>
+                    <div class="form__field">
 
-                        <div class="b__day">
-                            <label for="day" >Day</label>
-                            <input type="text" inputmode="numeric" maxlength="2" name="day" id="day" pattern="((0?[1-9])|([12][0-9])|(3[01]))" placeholder="DD">
-                        </div>
+                        <label for="birthday-caption">What's your date of birth?</label>
 
-                        <div class="b__month">
-                            <label for="month">Month</label>
-                            <select name="month" id="month" required aria-invalid="false">
-                                <option selected disabled value>Month</option>
-                                <option value="01">January</option>
-                                <option value="02">February</option>
-                                <option value="03">March</option>
-                                <option value="04">April</option>
-                                <option value="05">May</option>
-                                <option value="06">June</option>
-                                <option value="07">July</option>
-                                <option value="08">August</option>
-                                <option value="09">September</option>
-                                <option value="10">October</option>
-                                <option value="11">November</option>
-                                <option value="12">December</option>
-                            </select>
-                        </div>
+                        <div class="birthday__container">
 
-                        <div class="b__year">    
-                            <label for="year" class="">Year</label>
-                            <input type="text" aria-invalid="false" inputmode="numeric" maxlength="4" name="year"
-                            pattern="(19[0-9]{2})|(200)[0-6]" placeholder="YYYY">
-                        </div>    
-                    </div>
-
-                    <div>
-
-                        <label>What's your gender?</label>
-
-                        <label for="gender_option">
-                            <input type="radio" name="gender" id="gender-m">
-                            Male
-                        </label>
-
-                        <label for="gender_option">
-                            <input type="radio" name="gender" id="gender-f">
-                            Female
-                        </label>
+                            <div class="form__field">
+                                <label for="day" >Day</label>
+                                <input type="text" inputmode="numeric" maxlength="2" name="day" id="day" pattern="((0?[1-9])|([12][0-9])|(3[01]))" placeholder="DD" required>
+                            </div>
     
-                        <label for="gender_option">
-                            <input type="radio" name="gender" id="gender-n">
-                            Non-binary
-                        </label>
+                            <div class="form__field">
+                                <label for="Month" >Month</label>    
+                                <select name="month" id="month"  required aria-invalid="false">
+                                    <option selected disabled value>Month</option>
+                                    <option value="01">January</option>
+                                    <option value="02">February</option>
+                                    <option value="03">March</option>
+                                    <option value="04">April</option>
+                                    <option value="05">May</option>
+                                    <option value="06">June</option>
+                                    <option value="07">July</option>
+                                    <option value="08">August</option>
+                                    <option value="09">September</option>
+                                    <option value="10">October</option>
+                                    <option value="11">November</option>
+                                    <option value="12">December</option>
+                                </select>
+                            </div>    
+    
+                            <div class="form__field">
+                                <label for="year" >Year</label>
+                                <input type="text" name="year" id="year" aria-invalid="false" inputmode="numeric" maxlength="4" pattern="(19[0-9]{2})|(200)[0-6]" placeholder="YYYY" required>
+                            </div>
 
-                        <label for="gender_option">
-                            <input type="radio" name="gender" id="gender-o">
-                            Other
-                        </label>
+                        </div>
+                        
+                            
+                    </div>
 
-                        <label for="gender_option">
-                            <input type="radio" name="gender" id="gender-nts">
-                            Prefer not to say
-                        </label>
+                    <div class="form__field">
+
+                        <label for="gender-caption">What's your gender?</label>
+
+                        <div class="gender__container">
+
+                            <div class="form__field gender__label">
+                                <label for="male">
+                                    <input type="radio" name="gender" id="Male">
+                                    Male
+                                </label>
+                            </div>
+
+                            <div class="form__field">
+                                <label for="female">
+                                    <input type="radio" name="gender" id="female">
+                                    Female
+                                </label>
+                            </div>
+                            
+                            <div class="form__field">
+                                <label for="non-binary">
+                                    <input type="radio" name="gender" id="non-binary">
+                                    Non-binary
+                                </label>
+                            </div>
+                            
+                            <div class="form__field">
+                                <label for="other">
+                                    <input type="radio" name="gender" id="other">
+                                    Other
+                                </label>
+                            </div>
+    
+                            <div class="form__field">
+                                <label for="not-to-say">
+                                    <input type="radio" name="gender" id="not-to-say">
+                                    Prefer not to say
+                                </label>
+                            </div>                        
+                            
+                        </div>
+
                     </div>
 
                     <div class="form__checkbox">
 
                         <label for="news-checkbox">
-                            <input type="checkbox" name="news-checkbox" id="news-checkbox">Please send me news and offers from Spotify
+                        <input type="checkbox" name="news-checkbox" id="news-checkbox">Please send me news and offers from Spotify
                         </label>
 
                         <label for="registration-data">
-                            <input type="checkbox" name="registration-data" id="registration-data">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of theEEA as described in our privacy policy.
+                        <input type="checkbox" name="registration-data" id="registration-data">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of theEEA as described in our privacy policy.
                         </label>
 
                         <div class="recaptcha">
@@ -171,10 +188,14 @@
                             <input type="text" hidden="" name="recaptchaCheckbox" required=""
                             data-testid="recaptcha-input-test" value="">
                         </div>
+                    </div>
 
-                    <!------------------------- Sign-up button ------------------------>    
+                     <!------------------------- Sign-up button ------------------------>    
+                    
+                    <div class="submit__container">
 
-                        <div class="sign-up__button">
+                        <div class="submit__button">
+
                             <p>By clicking on sign-up, you agree to Spotify's
                                 <a href="https://www.spotify.com/ro-ro/legal/end-user-agreement/">Terms and Conditions of Use.</a>
                             </p> 
@@ -184,11 +205,12 @@
                                 <a href="https://www.spotify.com/ro-ro/legal/privacy-policy/"> Spotify's Privacy Policy.</a>
                             <p>
 
-                            <button class="button sign-up__button"type="submit">Sign up</button>
+                            <button class="button" type="submit">Sign up</button>
 
                             <span class="log-in">Have an account?
                                 <a href="https://accounts.spotify.com/?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1/">Log in.</a>
                             </span>
+
                         </div>
                     </div>
 
