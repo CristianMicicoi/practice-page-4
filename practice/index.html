@@ -56,24 +56,54 @@
                 <form action="" method="post">
 
                     <div class="form__field">
+
                         <label for="sign-up-email">What's your email?</label>
                         <input type="email" name="sign-up-email" id="sign-up-email" placeholder="Enter your email." autocomplete="off" required>
+
+                        <div class="warning">
+                            <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                            </svg>
+                            <span>You need to enter your email.</span>
+                        </div>
+
                     </div>
 
                     <div class="form__field">
+
                         <label for="confirm-email">Confirm your email</label>
                         <input type="email" name="confirm-email" id="confirm-email" placeholder="Enter your email again." autocomplete="off" required>
+
+                        <div class="warning">
+                            <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                            </svg>
+                            <span>You need to confirm your email.</span>
+                        </div>
+
                     </div>
 
                     <div class="form__field">
+
                         <label for="password">Create a password.</label>
                         <input type="password" placeholder="Create a password" minlength="8" required>
+                        <div class="warning">
+                            <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                            </svg>
+                            <span>You need to enter a password.</span>
+                        </div>
+
                     </div>
 
                     <div class="form__field">
                         <label for="username">What should we call you?</label>
                         <input type="text" name="username" id="username" placeholder="Enter a profile name." required>
                         <p class="caption">This appears on your profile.</p>
+
+                        <div class="warning">
+                            <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                            </svg>
+                            <span>Enter a name for your profile.</span>
+                        </div>
+
                     </div>
 
                     <div class="form__field">
@@ -110,6 +140,24 @@
                                 <label for="year" >Year</label>
                                 <input type="text" name="year" id="year" aria-invalid="false" inputmode="numeric" maxlength="4" pattern="(19[0-9]{2})|(200)[0-6]" placeholder="YYYY" required>
                             </div>
+
+                            <div class="warning">
+                                <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                                </svg>
+                                <span>Enter a valid day of the month.</span>
+                            </div>
+
+                            <!-- <div class="warning">
+                                <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                                </svg>
+                                <span>Select your birth month.</span>
+                            </div>
+
+                            <div class="warning">
+                                <svg fill="var(--text-negative,#d31225)" role="img" height="16" width="16" aria-label="Error:" class="Svg-sc-1bi12j5-0 jgfuCe FormHelpText__IconExclamationAltActiveForText-sc-7bszd7-0 llQMPf" viewBox="0 0 16 16"><path d="M2.343 2.343a8 8 0 1111.314 11.314A8 8 0 012.343 2.343zm5.099 8.738a.773.773 0 00-.228.558.752.752 0 00.228.552.75.75 0 00.552.229.773.773 0 00.558-.229.743.743 0 00.234-.552.76.76 0 00-.234-.558.763.763 0 00-.558-.234.743.743 0 00-.552.234zm-.156-7.23l.312 6.072h.804l.3-6.072H7.286z"></path>
+                                </svg>
+                                <span>Enter a vald year.</span>
+                            </div> -->
 
                         </div>
                         
@@ -161,15 +209,18 @@
 
                     </div>
 
-                    <div class="form__checkbox">
+                    <div class="checkbox__container">
+                        <div class="form__checkbox">
+                            <input type="checkbox" name="news-checkbox" id="news-checkbox">
+                            <label tabindex="0" for="news-checkbox" class="checkbox"><div class="checkbox__tick"></div></label>
+                            <label tabindex="-1" class="checkbox__label" for="news-checkbox">Please send me news and offers from Spotify</label>
+                        </div>
 
-                        <label for="news-checkbox">
-                        <input type="checkbox" name="news-checkbox" id="news-checkbox">Please send me news and offers from Spotify
-                        </label>
-
-                        <label for="registration-data">
-                        <input type="checkbox" name="registration-data" id="registration-data">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of theEEA as described in our privacy policy.
-                        </label>
+                        <div class="form__checkbox">
+                            <input type="checkbox" name="registration-data" id="registration-data">
+                            <label tabindex="0" for="registration-data" class="checkbox"><div class="checkbox__tick"></div></label>
+                            <label for="registration-data">Share my registration data with Spotify's content providers for marketing purposes. Note that your data may be transferred to a country outside of theEEA as described in our privacy policy.</label>
+                        </div>                    
 
                         <div class="recaptcha">
                             <div style="width: 304px; height: 78px;">
@@ -190,11 +241,11 @@
                         </div>
                     </div>
 
-                     <!------------------------- Sign-up button ------------------------>    
+                     <!------------------------- Submit button ------------------------>    
                     
-                    <div class="submit__container">
+                    <div class="submit__section">
 
-                        <div class="submit__button">
+                        <div class="submit__container">
 
                             <p>By clicking on sign-up, you agree to Spotify's
                                 <a href="https://www.spotify.com/ro-ro/legal/end-user-agreement/">Terms and Conditions of Use.</a>
@@ -205,7 +256,7 @@
                                 <a href="https://www.spotify.com/ro-ro/legal/privacy-policy/"> Spotify's Privacy Policy.</a>
                             <p>
 
-                            <button class="button" type="submit">Sign up</button>
+                            <button class="button submit__button" type="submit">Sign up</button>
 
                             <span class="log-in">Have an account?
                                 <a href="https://accounts.spotify.com/?continue=https%3A%2F%2Fopen.spotify.com%2F__noul__%3Fl2l%3D1%26nd%3D1/">Log in.</a>
